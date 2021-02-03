@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{4F744F60-08A6-4EA9-866D-66FED5F19159}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="StudentzMVC/Models/Student.cs">
+    <Files>
+      <File FileName="StudentzMVC/Models/Student.cs" Line="17" Column="6" />
+      <File FileName="StudentzMVC/Controllers/StudentController.cs" Line="24" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="StudentzMVC" expanded="True">
+            <Node name="StudentzMVC" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Student.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.StudentzMVC PreferredExecutionTarget="/Applications/Brave Browser.app" />
+</Properties>
