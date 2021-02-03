@@ -1,8 +1,19 @@
-﻿@{
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+@{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h1>Contact</h1>
+<br />
+<h2>@localizer["Mapview"]</h2>
+<br />
+<img width="600" style="margin-bottom:1em" src="https://maps.googleapis.com/maps/api/staticmap?center=Nijverheidskaai+170&zoom=15&scale=false&size=600x300&maptype=roadmap&key=AIzaSyDG8nl6Suu8KN5gho_s_avBoZiqS-sT1wo&format=png&visual_refresh=true" alt="Google Map of Nijverheidskaai 170">
 
-
+<h3>@localizer["Address"]</h3>
+<br />
+<address>@localizer["AddressStreet"]</address>
+<br />
+<h3>@localizer["Phone"]</h3>
+<br />
+<a href="tel:025233737">@localizer["ContactUs"] 025233737</a>
