@@ -32,7 +32,11 @@ namespace StudentzMVC
         {
             services.AddLocalization(opt => { opt.ResourcesPath = "Resources"; });
             services.AddMvc().AddViewLocalization(Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat.Suffix).AddDataAnnotationsLocalization();
-
+            services.AddControllers();
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "StudentzMVC", Version = "v1" });
+            });
             services.Configure<RequestLocalizationOptions>(
                 opt =>
                 {
@@ -68,6 +72,8 @@ namespace StudentzMVC
             {
                 app.UseDeveloperExceptionPage();
                 app.UseDatabaseErrorPage();
+                app.UseSwagger();
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "StudentzMVC v1"));
             }
             else
             {
@@ -85,6 +91,7 @@ namespace StudentzMVC
 
             app.UseRequestLocalization(app.ApplicationServices.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
 
+            
 
             app.UseEndpoints(endpoints =>
             {
@@ -92,6 +99,7 @@ namespace StudentzMVC
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
+                endpoints.MapControllers();
             });
         }
     }
