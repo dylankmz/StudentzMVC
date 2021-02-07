@@ -18,15 +18,15 @@ namespace StudentzMVC.Models
         [Key]
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "Please insert valid name!")]
-        [StringLength(50, MinimumLength = 2, ErrorMessage = "Please insert valid name!")]
+        [Required(ErrorMessage = "Please insert valid first name!")]
+        [StringLength(50, MinimumLength = 2, ErrorMessage = "Please insert valid first name!")]
         public string firstName { get; set; }
 
-        [Required(ErrorMessage = "Please insert valid name!")]
-        [StringLength(50, MinimumLength = 2, ErrorMessage = "Please insert valid name!")]
+        [Required(ErrorMessage = "Please insert valid last name!")]
+        [StringLength(50, MinimumLength = 2, ErrorMessage = "Please insert valid last name!")]
         public string lastName { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Please insert correct date format!")]
         [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
         [DataType(DataType.Date)]
         public DateTime birthDate { get; set; }
@@ -38,9 +38,9 @@ namespace StudentzMVC.Models
         [EmailAddress(ErrorMessage = "Please insert valid email address!")]
         public string email { get; set; }
 
-        [Required(ErrorMessage = "Please insert valid phonenumber!")]
+        [Required(ErrorMessage = "Please insert valid phone number!")]
         [StringLength(11)]
-        [Phone(ErrorMessage = "Please insert valid phonenumber!")]
+        [Phone(ErrorMessage = "Please insert valid phone number!")]
         public string phoneNumber { get; set; }
 
         [Required(ErrorMessage = "Please insert correct address!")]
