@@ -2,3 +2,5 @@
 API: https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-5.0&tabs=visual-studio
 Localization: https://www.youtube.com/watch?v=Hy9G30nncMM
 DataTables: https://www.datatables.net/
+Github: https://github.com/dylankmz/StudentzMVC
+

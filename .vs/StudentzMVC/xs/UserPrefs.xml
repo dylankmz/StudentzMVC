@@ -4,7 +4,9 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="StudentzMVC" expanded="True">
-            <Node name="StudentzMVC" expanded="True" selected="True" />
+            <Node name="StudentzMVC" expanded="True">
+              <Node name="InternetResources.txt" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
