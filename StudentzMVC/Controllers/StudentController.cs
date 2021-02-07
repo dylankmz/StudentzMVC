@@ -28,7 +28,7 @@ namespace StudentzMVC.Controllers
             _db = db;
         }
 
-        [Authorize(Roles = "Manager")]
+        [Authorize(Roles = "Manager, Admin")]
         public IActionResult Index()
         {
             return View();
